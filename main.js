@@ -17,4 +17,4 @@ answer.style.display = "block";
     });
 }
 
-a.href = "https://sweetcode.io/how-to-build-an-faq-page-with-html-and-javascript/"; 
+//https://sweetcode.io/how-to-build-an-faq-page-with-html-and-javascript/
