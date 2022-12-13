@@ -51,8 +51,13 @@
 
 <div class="link3">
                   <a href="#click3" class="link3-link">
-                      Podcast
+                      Map
                   </a>
+                </div>
+<div class="link3">
+                <a href="#click4" class="link4-link">
+                      Podcast
+                </a>
                 </div>
 
 <!--- MAIN ROE GRAPHIC/WRAP-->
@@ -116,10 +121,54 @@
     </section>
 </main>
 
+<!---map-->
+
+<section>
+
+    <div id= "click3" class="album"></div>
+
+  <article>
+    <h2 id="containerh">OB-GYN & Abortion Clinic <br>Gainesville Map</h2>
+
+   <div id="map1"></div>
+
+   <p id="containerp">By Isabella Douglas</p>
+
+   <p>This map shows addresses for two confirmed Gainesville locations where women may recieve an abortion as well as several OB-GYN Gainesville clinics for women to recieve care and ask reproductive health questions. This map was last updated Dec. 12, 2022.</p>
+
+   </article>
+<script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+
+<script>
+  let map = L.map('map1').setView([29.635574, -82.317913], 11.21);
+  L.tileLayer('https://api.mapbox.com/styles/v1/issadouglas/clam107wu000215o0pe240cdz/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiaXNzYWRvdWdsYXMiLCJhIjoiY2xhbTB4cTg2MGFxYTN3c3hncG95aGx0dSJ9.vn_1rs2hgroPhEj9h8UfhA', {
+    maxZoom: 18,
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a>'
+}).addTo(map);
 
 
-<!---PODCAST-->
-<div id= "click3" class="album">
+let popup1 = L.marker([29.660780, -82.338200]).addTo(map);
+popup1.bindPopup("<b>Bread & Roses Women's Health Center</b><br>This facility is an abortion clinic and is located at 1233 NW 10th Ave., Gainesville, FL 32601.").openPopup();
+
+let  popup2 = L.marker([29.673700, -82.336699]).addTo(map);
+popup2.bindPopup("<b>All Women's Health Center of Gainesville, Inc</b><br>This facility is an abortion clinic and is located at 1135 NW 23rd Ave., Suite N, Gainesville, FL 32609.").openPopup();
+
+let popup3 = L.marker([29.66213468647431, -82.41037914437342]).addTo(map);
+popup3.bindPopup("<b>Gainesville OB-GYN</b><br>This facility is located at 6440 W. Newberry Rd #502, Gainesville, FL 32605.").openPopup();
+
+let popup4 = L.marker([29.660507035902288, -82.41096431738792]).addTo(map);
+popup4.bindPopup("<b>North Florida Regional Medical Center OB-GYN</b><br>This facility is located at 66440 W. Newberry Rd #503, Gainesville, FL 32605.").openPopup();
+
+  </script>
+
+
+
+
+
+</section>
+
+<!---podcast-->
+<div id= "click4" class="album">
 
 <img id="sound" class="album-icon" src="images/alligatorpodcast.jpg" alt="Podcast cover">
 </div>
@@ -132,29 +181,8 @@
 <p>Click to listen to The Alligator podcast's special episode for Roe in Review.</p>
 </div>
 
-<!---map->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-FOOTER-->
+<!--footer-->
 <section class="footer">
   <h4>ABOUT US</h4>
   <div class="icons">

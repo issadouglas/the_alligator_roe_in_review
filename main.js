@@ -1,5 +1,3 @@
-/*use for loop to repeat*/
-
 
 var faq = document.getElementsByClassName("faq-question");
 var i;

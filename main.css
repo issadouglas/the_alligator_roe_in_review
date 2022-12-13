@@ -209,6 +209,7 @@ img {
   flex-direction: column;
   margin: auto;
   max-width: 600px;
+  padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
@@ -587,6 +588,7 @@ img {
 display: flex;
 justify-content: center;
 flex-direction: column;
+padding-bottom: 2rem;
 
 }
 .hr-line{
@@ -630,18 +632,34 @@ flex-direction: column;
 
 
 /*map*/
+article {
+  display: block;
+    max-width: 595px;
+    padding: 20px;
+    margin: auto;
+    background: #FFF;
+}
 
+article p {
+  max-width: 70ch;
+}
 
+#map1 {
+  height: 400px;
+  width: 100%;
+  margin-top: 3em;
+  border: 1px solid #999;
+}
 
+#containerp {
+  align-items: center;
+  text-align: right;
+}
 
-
-
-
-
-
-
-
-
+#containerh {
+  align-items: center;
+  text-align: center;
+}
 
 
 
@@ -664,5 +682,7 @@ flex-direction: column;
   #image2, #image1, #image3, #image5, #image6 p {
     padding: 0 1rem 0 1rem;
   }
-
+  article {
+    max-width: 100%;
+  }
 }
